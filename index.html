@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trip Chengdu 2027</title>
+<meta name="description" content="Itinerary trip family ke Chengdu, Sichuan, China, 11-16 Mac 2027.">
+<style>
+  :root {
+    --bg: #FAFAF8; --surface: #FFFFFF; --text: #1F2328; --muted: #5B6168; --line: #E3E4E6;
+    --accent: #0E6E6A; --accent-soft: #E6F3F2; --warn: #8A4B00; --warn-soft: #FFF4E0;
+    --radius: 8px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15171A; --surface: #1C1F23; --text: #E8E9EB; --muted: #A3A8AE; --line: #2E3237;
+      --accent: #5CC8C0; --accent-soft: #17292A; --warn: #F3B45C; --warn-soft: #2A2216; }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  a { color: var(--accent); }
+  a:focus-visible, summary:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header.top { padding: 28px 0 8px; }
+  .eyebrow { margin: 0; color: var(--muted); font-size: 14px; }
+  h1 { margin: 4px 0 6px; font-size: 32px; line-height: 1.2; }
+  .sub { margin: 0; color: var(--muted); }
+  .note { display: inline-block; margin-top: 10px; font-size: 14px; color: var(--warn); background: var(--warn-soft); padding: 4px 10px; border-radius: 999px; }
+  nav.days { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+  nav.days ul { display: flex; gap: 6px; list-style: none; margin: 0 auto; padding: 10px 16px; max-width: 860px; overflow-x: auto; scrollbar-width: none; }
+  nav.days a { display: block; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--text); font-size: 14px; white-space: nowrap; background: var(--surface); min-height: 36px; }
+  nav.days a:hover { border-color: var(--accent); color: var(--accent); }
+  section { padding: 22px 0 6px; }
+  h2 { font-size: 22px; margin: 0 0 12px; }
+  h3 { font-size: 17px; margin: 18px 0 6px; }
+  .video { margin: 14px 0 6px; }
+  video { width: 100%; aspect-ratio: 16 / 9; display: block; background: #000; border-radius: var(--radius); }
+  .caption { color: var(--muted); font-size: 14px; margin: 6px 0 0; }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+  dl.facts dt { color: var(--muted); }
+  dl.facts dd { margin: 0; }
+  .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .people div { border-top: 3px solid var(--line); padding-top: 8px; }
+  .people h3 { margin: 0 0 4px; font-size: 15px; }
+  .people ul { margin: 0; padding-left: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; color: var(--muted); font-weight: 600; }
+  .scroll { overflow-x: auto; }
+  .day { border-top: 1px solid var(--line); }
+  .day h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+  .day h2 .n { color: var(--accent); }
+  .day h2 .d { color: var(--muted); font-size: 15px; font-weight: 400; }
+  ol.plan { list-style: none; margin: 0; padding: 0; }
+  ol.plan li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 7px 0; border-bottom: 1px dashed var(--line); }
+  ol.plan li:last-child { border-bottom: 0; }
+  .time { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .drive { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; }
+  ul.tips { margin: 10px 0 0; padding-left: 18px; }
+  ul.tips li { margin: 3px 0; }
+  .key { font-weight: 600; }
+  .zh { color: var(--muted); }
+  .callout { border-left: 4px solid var(--warn); background: var(--warn-soft); padding: 10px 14px; border-radius: 0 var(--radius) var(--radius) 0; margin: 10px 0; }
+  .callout p { margin: 0; }
+  .callout p + p { margin-top: 6px; }
+  .good { border-left-color: var(--accent); background: var(--accent-soft); }
+  .status { font-size: 13px; color: var(--warn); white-space: nowrap; }
+  details { border-top: 1px solid var(--line); padding: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; min-height: 32px; }
+  details ul { padding-left: 18px; font-size: 14px; overflow-wrap: anywhere; }
+  footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--line); margin-top: 24px; }
+  @media (max-width: 560px) {
+    h1 { font-size: 26px; }
+    ol.plan li { grid-template-columns: 54px 1fr; }
+    th, td { padding: 7px 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <p class="eyebrow">Itinerary family</p>
+    <h1>Trip Chengdu 2027</h1>
+    <p class="sub">Chengdu, Sichuan, China · Khamis 11 – Selasa 16 Mac 2027 · 6 hari 5 malam</p>
+    <span class="note">Tarikh belum muktamad. Flight belum ditempah.</span>
+  </header>
+</div>
+
+<nav class="days" aria-label="Pergi ke bahagian">
+  <ul>
+    <li><a href="#video">Video</a></li>
+    <li><a href="#flight">Flight</a></li>
+    <li><a href="#hari-1">Hari 1</a></li>
+    <li><a href="#hari-2">Hari 2</a></li>
+    <li><a href="#hari-3">Hari 3</a></li>
+    <li><a href="#hari-4">Hari 4</a></li>
+    <li><a href="#hari-5">Hari 5</a></li>
+    <li><a href="#hari-6">Hari 6</a></li>
+    <li><a href="#solat">Solat</a></li>
+    <li><a href="#halal">Halal</a></li>
+    <li><a href="#barang">Barang</a></li>
+    <li><a href="#tempahan">Tempahan</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <section id="video" class="video" aria-label="Video">
+    <video controls playsinline preload="metadata" poster="poster.jpg">
+      <source src="Trip-Chengdu-2027.mp4" type="video/mp4">
+      Browser ini tak boleh main video. <a href="Trip-Chengdu-2027.mp4">Muat turun video</a>.
+    </video>
+    <p class="caption">Pak Long terangkan plan trip (lebih kurang 3½ minit, ada suara).</p>
+  </section>
+
+  <section aria-labelledby="ringkas">
+    <h2 id="ringkas">Ringkasnya</h2>
+    <dl class="facts">
+      <dt>Siapa</dt><dd>12 orang: 7 dewasa + 5 budak</dd>
+      <dt>Tidur</dt><dd>Hotel di bandar Chengdu (4 malam) + 1 malam dekat Gunung Salji Xiling</dd>
+      <dt>Kenderaan</dt><dd>Van + driver, semua hari</dd>
+      <dt>Makanan</dt><dd>Halal sahaja. Cari tulisan <b>清真</b> (qing zhen = halal)</dd>
+      <dt>Main salji</dt><dd>Hari 2, Gunung Salji Xiling, lebih kurang 4 jam</dd>
+      <dt>Panda</dt><dd>Hari 3, Panda Valley di Dujiangyan</dd>
+      <dt>Raya</dt><dd>Dijangka 10 Mac. 11 Mac = Raya kedua. Tiada puasa masa trip.</dd>
+      <dt>Visa</dt><dd>Tak perlu. Passport Malaysia bebas visa 30 hari</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="siapa">
+    <h2 id="siapa">Siapa pergi</h2>
+    <div class="people">
+      <div><h3>Tok &amp; Tok Wan</h3><ul><li>Tok</li><li>Tok Wan</li></ul></div>
+      <div><h3>Keluarga Pak Long</h3><ul><li>Pak Long</li><li>Mak Long</li><li>Ayyash (1 thn 7 bln)</li></ul></div>
+      <div><h3>Pak Ngah</h3><ul><li>Pak Ngah</li></ul></div>
+      <div><h3>Keluarga Pak Lang</h3><ul><li>Pak Lang</li><li>Mak Lang</li><li>Ayish (8)</li><li>Iz (4–5)</li><li>Ivy (3–5)</li><li>Iris (1 thn 2 bln)</li></ul></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="pelan">
+    <h2 id="pelan">Pelan 6 hari</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Hari</th><th>Tarikh</th><th>Plan</th><th>Tidur</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#hari-1">1</a></td><td>Khamis 11 Mac</td><td>Sampai Tianfu, Kuanzhai Alley, Masjid Huangcheng, Chunxi Road + Taikoo Li</td><td>Chengdu</td></tr>
+          <tr><td><a href="#hari-2">2</a></td><td>Jumaat 12 Mac</td><td><span class="key">Main salji</span> di Gunung Salji Xiling</td><td>Xiling</td></tr>
+          <tr><td><a href="#hari-3">3</a></td><td>Sabtu 13 Mac</td><td>Panda Valley, bandar lama Dujiangyan, Blue Tears (malam)</td><td>Chengdu</td></tr>
+          <tr><td><a href="#hari-4">4</a></td><td>Ahad 14 Mac</td><td>Polar Ocean Park, seharian</td><td>Chengdu</td></tr>
+          <tr><td><a href="#hari-5">5</a></td><td>Isnin 15 Mac</td><td>Happy Valley, malam balik bandar</td><td>Chengdu</td></tr>
+          <tr><td><a href="#hari-6">6</a></td><td>Selasa 16 Mac</td><td>Hari bebas, malam ke airport</td><td>Flight</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption">Plan asal = pakej Hari 1–5. Masa, perjalanan, solat, halal, harga dan Hari 6 ditambah. Masa perjalanan ialah anggaran, jalan tak jem.</p>
+  </section>
+
+  <section id="flight" aria-labelledby="ft">
+    <h2 id="ft">Flight (penting)</h2>
+    <div class="callout">
+      <p>Semua flight terus KL – Chengdu guna <b>Tianfu (TFU)</b>. <b>MH526</b>: KUL 19:25 → TFU <b>00:15</b> hari esok. Jadi untuk sampai Khamis 11 Mac, kena terbang <b>malam Rabu 10 Mac</b> (hari Raya pertama, dijangka).</p>
+      <p><b>MH527</b>: TFU ~<b>01:05</b> → KUL ~06:10. Jadi balik = keluar hotel malam Selasa 16 Mac, terbang lepas tengah malam.</p>
+    </div>
+    <ul class="tips">
+      <li>AirAsia X, Batik Air dan Sichuan Airlines pun terbang KL – TFU. Masa ikut musim, semak bila tempah.</li>
+      <li>Airport ke bandar: ~60–66 km, 1–1.5 jam, ada tol.</li>
+    </ul>
+  </section>
+
+  <section id="hari-1" class="day" aria-labelledby="h1t">
+    <h2 id="h1t"><span class="n">Hari 1</span> Sampai + jalan-jalan malam <span class="d">Khamis, 11 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">00:15</span><span>Sampai <b>Tianfu Airport</b> (kalau MH526). Bebas visa. Driver ambil.<small class="drive">Ke hotel ~1–1.5 jam. Tidur.</small></span></li>
+      <li><span class="time">Pagi</span><span>Bangun lewat. Sarapan halal tepi masjid.</span></li>
+      <li><span class="time">13:15</span><span><b>Masjid Huangcheng</b> <span class="zh">皇城清真寺</span>: Zohor + Asar jamak. Makan di <b>Tianfanglou</b> <span class="zh">天方楼</span> (bawah masjid).<small class="drive">Jalan kaki dari hotel</small></span></li>
+      <li><span class="time">15:00</span><span><b>Kuanzhai Alley</b> <span class="zh">宽窄巷子</span>: lorong lama, rumah batu kelabu, tanglung merah. Percuma.<small class="drive">Van ~10 min</small></span></li>
+      <li><span class="time">17:00</span><span>Balik hotel, rehat.</span></li>
+      <li><span class="time">19:09</span><span>Masjid Huangcheng: Maghrib + Isyak jamak. Makan malam halal: Tianfanglou atau <b>Yuexiangcun</b> <span class="zh">清真粤香村</span>.</span></li>
+      <li><span class="time">20:45</span><span><b>Chunxi Road + Taikoo Li</b> <span class="zh">春熙路 · 太古里</span>: lampu malam, <b>panda besar panjat bangunan IFS</b>.<small class="drive">Van ~10 min, atau Metro Line 2 satu stesen. Balik hotel ~22:00</small></span></li>
+    </ol>
+    <ul class="tips">
+      <li>Makanan jalanan di Kuanzhai + Chunxi kebanyakan <b>tidak halal</b>. Makan di kedai 清真 sahaja.</li>
+      <li>Masjid Huangcheng: tepi barat Tianfu Square. Lelaki + perempuan boleh masuk.</li>
+      <li>Kalau flight siang: sampai, ke hotel, kemudian ikut jadual dari 15:00.</li>
+    </ul>
+  </section>
+
+  <section id="hari-2" class="day" aria-labelledby="h2t">
+    <h2 id="h2t"><span class="n">Hari 2</span> Main salji <span class="d">Jumaat, 12 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">07:00</span><span>Sarapan, check-out. Bawa <b>bekal halal</b> (tiada makanan halal di Xiling).</span></li>
+      <li><span class="time">07:30</span><span>Bertolak ke <b>Gunung Salji Xiling</b> <span class="zh">西岭雪山</span>.<small class="drive">~110 km, ~2.5 jam</small></span></li>
+      <li><span class="time">10:00</span><span>Naik <b>kereta kabel Yuanyangchi</b> + bas ~7 min ke kawasan salji (Yingxue Square, ~2,300 m). Sewa baju salji + boot.</span></li>
+      <li><span class="time">10:45</span><span><b>Main salji ~4 jam</b>: taman salji budak (tiub salji, gelongsor, snowmobile kecil), buat orang salji.</span></li>
+      <li><span class="time">12:00</span><span>Makan bekal dalam bangunan.</span></li>
+      <li><span class="time">14:30</span><span>Pulang baju sewa, turun kereta kabel. Check-in hotel. Zohor + Asar jamak.<small class="drive">Ke Huashuiwan ~15–30 min</small></span></li>
+      <li><span class="time">Malam</span><span>Rehat, mandi air panas. Maghrib + Isyak di hotel.</span></li>
+    </ol>
+    <div class="callout">
+      <p><b>Musim salji hampir habis:</b> 2025 tutup 17 Mac, 2026 ski berhenti 17 Mac. 12 Mac masih ada salji, tapi semak tarikh tutup 2027. Backup: <b>Sunac Snow World</b> <span class="zh">成都融创雪世界</span> (salji dalam bangunan, Dujiangyan).</p>
+      <p><b>Rusa kutub belum pasti.</b> Satu blog 2024 sebut rusa kutub; sumber rasmi sebut anjing tarik giring. Tanya agensi.</p>
+    </div>
+    <ul class="tips">
+      <li>Masuk ¥120, kereta kabel ¥120 pergi balik (2025). Bawah 6 tahun / 1.2 m percuma. 65+ percuma masuk.</li>
+      <li>Jangan naik Riyueping (3,250 m) dengan bayi + Tok, Tok Wan. Main di kawasan salji bawah sahaja.</li>
+      <li>-5 hingga 5°C. Bawa sarung tangan kalis air, stokin tebal, cermin mata hitam (goggles tak disediakan), sunblock.</li>
+      <li>Hotel: <b>Huashuiwan</b> <span class="zh">花水湾</span> (kaki gunung, air panas, lebih murah) – cadangan. Atau hotel tengah gunung (¥600–1,000).</li>
+      <li>Jumaat: musafir tak wajib Jumaat. Zohor + Asar jamak.</li>
+    </ul>
+  </section>
+
+  <section id="hari-3" class="day" aria-labelledby="h3t">
+    <h2 id="h3t"><span class="n">Hari 3</span> Panda + Blue Tears <span class="d">Sabtu, 13 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">07:00</span><span>Check-out, bertolak ke Dujiangyan.<small class="drive">~1.5–2 jam</small></span></li>
+      <li><span class="time">08:45</span><span><b>Panda Valley</b> <span class="zh">熊猫谷</span>: ~12–15 panda besar + ~20 <b>panda merah</b> (laluan atas pokok). Panda paling aktif 08:30–10:30.</span></li>
+      <li><span class="time">11:45</span><span>Makan bekal halal.</span></li>
+      <li><span class="time">13:15</span><span>Zohor + Asar jamak (bawa sejadah, kiblat ~277° = barat).</span></li>
+      <li><span class="time">14:00</span><span>Rehat (budak tidur dalam van), atau <b>Dujiangyan Irrigation System</b> <span class="zh">都江堰景区</span>.</span></li>
+      <li><span class="time">16:30</span><span><b>Guanxian old town</b> <span class="zh">灌县古城</span>, jalan-jalan. Percuma.</span></li>
+      <li><span class="time">19:09</span><span>Maghrib + Isyak jamak.</span></li>
+      <li><span class="time">19:45</span><span><b>Blue Tears</b> <span class="zh">蓝眼泪</span>: lampu biru dalam dasar Sungai Minjiang. Tengok dari <b>Nanqiao</b> <span class="zh">南桥</span> + jambatan berbumbung Tianfuyuan. Percuma.</span></li>
+      <li><span class="time">20:45</span><span>Balik Chengdu. Budak tidur dalam van.<small class="drive">~1–1.5 jam. Sampai hotel ~22:00</small></span></li>
+    </ol>
+    <ul class="tips">
+      <li>Panda Valley ¥55. Percuma bawah 6 tahun / 1.3 m dan 60+ (semak untuk warga asing). <b>Tempah online sahaja</b> dengan passport, 7 hari awal, tiket keluar 20:00 hari sebelumnya.</li>
+      <li>Tiada bas dalam, jalan berbukit ~2–3 jam. Laluan bawah sesuai stroller.</li>
+      <li>Dujiangyan Panda Base (熊猫乐园) <b>tutup sejak Apr 2026</b>. Panda Valley tempat lain, masih buka.</li>
+      <li>Blue Tears menyala lepas gelap sampai 24:00. Sabtu malam ramai, pegang tangan budak.</li>
+      <li>Hari panjang untuk driver (~15 jam). Tanya caj.</li>
+    </ul>
+  </section>
+
+  <section id="hari-4" class="day" aria-labelledby="h4t">
+    <h2 id="h4t"><span class="n">Hari 4</span> Polar Ocean Park <span class="d">Ahad, 14 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">09:30</span><span><b>Polar Ocean Park</b> <span class="zh">海合安成都极地海洋公园</span> buka. Terus ke <b>terowong bawah air 360°</b>.<small class="drive">Van ~35–50 min dari hotel</small></span></li>
+      <li><span class="time">10:00</span><span>Pertunjukan <b>Beluga</b>.</span></li>
+      <li><span class="time">10:40</span><span>Pertunjukan <b>singa laut</b>.</span></li>
+      <li><span class="time">11:20</span><span>Pertunjukan <b>ikan paus + lumba-lumba</b>.</span></li>
+      <li><span class="time">12:00</span><span>Makan bekal halal.</span></li>
+      <li><span class="time">12:45</span><span><b>Penguin</b>, <b>beruang kutub</b>, taman ais -10°C.</span></li>
+      <li><span class="time">14:00</span><span>Pet Planet (panda merah, capybara, alpaka) + taman main budak (carousel, kapal lanun).</span></li>
+      <li><span class="time">16:30</span><span>Balik hotel. Zohor + Asar jamak takhir (sebelum Maghrib 19:10).</span></li>
+      <li><span class="time">19:10</span><span>Maghrib + Isyak. Makan malam: <b>Muslim Hot Pot</b> (hotpot Sichuan halal, Renhou St).</span></li>
+    </ol>
+    <ul class="tips">
+      <li>Dewasa ¥248. Budak 1 m – 12 tahun + 60–69 tahun ¥128. 70+ ¥98. <b>Bawah 1 m percuma.</b></li>
+      <li>09:30–17:30, masuk terakhir 16:00. Jadual pertunjukan dari 2024 – semak di pintu.</li>
+      <li>Tiada makanan halal + tiada surau ditemui dalam taman.</li>
+      <li>Kebanyakan dalam bangunan. Kalau hujan Hari 5, tukar Hari 4 dan 5.</li>
+    </ul>
+  </section>
+
+  <section id="hari-5" class="day" aria-labelledby="h5t">
+    <h2 id="h5t"><span class="n">Hari 5</span> Happy Valley <span class="d">Isnin, 15 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">10:00</span><span><b>Happy Valley</b> <span class="zh">成都欢乐谷</span> buka. <b>Magic Castle</b> <span class="zh">魔幻城堡</span>: ~20 ride budak, taman main lembut, bilik ibu + bayi.<small class="drive">Van ~30–45 min dari hotel</small></span></li>
+      <li><span class="time">12:00</span><span>Makan bekal halal.</span></li>
+      <li><span class="time">13:00</span><span><b>Cute Pet Paradise</b> <span class="zh">萌宠乐园</span>: capybara, alpaka, bagi makan. Rumah pokok + jambatan tali.</span></li>
+      <li><span class="time">Petang</span><span><b>Perarakan</b> <span class="zh">欢乐大巡游</span> (masa di app / papan dalam taman).</span></li>
+      <li><span class="time">17:30</span><span>Balik ke bandar. Zohor + Asar jamak takhir.<small class="drive">~30–45 min</small></span></li>
+      <li><span class="time">19:12</span><span>Maghrib + Isyak di Masjid Huangcheng. Makan malam halal. Beli cenderamata panda.</span></li>
+    </ol>
+    <ul class="tips">
+      <li>Dewasa ¥230. Budak 1.2–1.5 m ¥120. 60–69 tahun ¥120. <b>1.2 m ke bawah / bawah 5 tahun percuma.</b></li>
+      <li>Beli tiket di <b>Trip.com</b> (Klook = IC China sahaja). Bawa passport asal.</li>
+      <li>Hari Isnin: sesetengah ride tutup untuk servis. Ride budak biasanya tutup 18:00.</li>
+      <li>Snek berbungkus boleh dibawa. Jangan bawa kaca.</li>
+    </ul>
+  </section>
+
+  <section id="hari-6" class="day" aria-labelledby="h6t">
+    <h2 id="h6t"><span class="n">Hari 6</span> Hari bebas, malam balik <span class="d">Selasa, 16 Mac</span></h2>
+    <ol class="plan">
+      <li><span class="time">Pagi</span><span>Pilih satu: <b>Chengdu Panda Base</b> <span class="zh">成都大熊猫繁育研究基地</span> (lebih banyak panda + anak panda, ¥55, tempah online), atau rehat + beli-belah.<small class="drive">Panda Base ~25–40 min dari hotel</small></span></li>
+      <li><span class="time">12:00</span><span>Check-out. Minta late check-out / simpan 1 bilik sampai malam.</span></li>
+      <li><span class="time">13:15</span><span>Zohor + Asar jamak di Masjid Huangcheng. Makan tengah hari halal.</span></li>
+      <li><span class="time">19:12</span><span>Maghrib + Isyak jamak di masjid. Makan malam halal.</span></li>
+      <li><span class="time">21:30</span><span>Ke <b>Tianfu Airport</b>.<small class="drive">~1–1.5 jam</small></span></li>
+      <li><span class="time">01:05</span><span>Terbang balik (MH527). Sampai KL ~06:10 Rabu 17 Mac.</span></li>
+    </ol>
+    <ul class="tips">
+      <li>Masa ikut flight sebenar. Flight siang: buang pilihan pagi.</li>
+    </ul>
+  </section>
+
+  <section id="solat" aria-labelledby="st">
+    <h2 id="st">Waktu solat Chengdu</h2>
+    <p class="caption">Anggaran kaedah JAKIM (Aladhan). Kiblat ~277° (barat). Musafir boleh jamak + qasar. Semak di Muslim Pro.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Tarikh</th><th>Subuh</th><th>Syuruk</th><th>Zohor</th><th>Asar</th><th>Maghrib</th><th>Isyak</th></tr></thead>
+        <tbody>
+          <tr><td>11 Mac</td><td>5:50</td><td>7:19</td><td>13:14</td><td>16:35</td><td>19:09</td><td>20:29</td></tr>
+          <tr><td>15 Mac</td><td>5:45</td><td>7:15</td><td>13:13</td><td>16:36</td><td>19:12</td><td>20:32</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="halal" aria-labelledby="ht">
+    <h2 id="ht">Makanan halal</h2>
+    <div class="callout good"><p>Cari tulisan <b>清真</b> (qing zhen). Maksudnya halal / makanan Muslim.</p></div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Kedai</th><th>Apa</th><th>Di mana</th></tr></thead>
+        <tbody>
+          <tr><td>Tianfanglou <span class="zh">天方楼</span></td><td>Hotpot halal, dapanji, sate kambing</td><td>Bawah Masjid Huangcheng</td></tr>
+          <tr><td>Yuexiangcun <span class="zh">清真粤香村</span></td><td>Daging lembu kukus, ayam perap</td><td>Dongchenggen South St, dekat Kuanzhai</td></tr>
+          <tr><td>Muslim Hot Pot</td><td>Hotpot Sichuan halal</td><td>Renhou St <span class="zh">仁厚街</span></td></tr>
+          <tr><td>Kedai mi <span class="zh">兰州牛肉面</span></td><td>Mi daging lembu</td><td>Seluruh bandar – yang ada 清真</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption">Tiada makanan halal di Xiling, Panda Valley, Polar Ocean Park dan Happy Valley. Bawa bekal.</p>
+  </section>
+
+  <section id="barang" aria-labelledby="bt">
+    <h2 id="bt">Masuk China + barang</h2>
+    <div class="callout">
+      <p><b>Jangan bawa</b> daging, ayam, produk daging (retort, rendang, serunding), telur atau susu segar dari Malaysia. China larang, dirampas. Susu tepung bayi boleh.</p>
+    </div>
+    <ul class="tips">
+      <li><b>Bebas visa 30 hari</b> untuk passport Malaysia. Passport sah 6 bulan + 2 muka kosong.</li>
+      <li><b>Alipay / WeChat Pay</b> sambung kad Visa / Mastercard. Touch 'n Go eWallet boleh di kedai Alipay. Bawa sedikit tunai.</li>
+      <li><b>Google, WhatsApp, Instagram, Facebook disekat.</b> Guna roaming atau eSIM luar negara – beli sebelum pergi.</li>
+      <li>Plug 220V jenis A / C / I. Bawa <b>adapter</b> untuk plug Malaysia.</li>
+      <li>Cuaca Chengdu ~8–16°C, selalu renyai – bawa payung. Xiling -5 hingga 5°C.</li>
+      <li>Van: 12 orang + beg. 4 child seat (Ayyash, Iris, Ivy, Iz) + booster Ayish. Driver bawa rantai salji.</li>
+      <li>Ayyash + Iris: stroller ringan + baby carrier.</li>
+    </ul>
+  </section>
+
+  <section id="tempahan" aria-labelledby="tt">
+    <h2 id="tt">Tempahan</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Perkara</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Flight KL ↔ Tianfu (sampai 11 Mac, balik malam 16 Mac)</td><td class="status">Belum</td></tr>
+          <tr><td>Hotel Chengdu 4 malam, dekat Masjid Huangcheng</td><td class="status">Belum</td></tr>
+          <tr><td>Hotel Xiling / Huashuiwan 1 malam (12 Mac)</td><td class="status">Belum</td></tr>
+          <tr><td>Van + driver 6 hari, 4 child seat, rantai salji</td><td class="status">Belum</td></tr>
+          <tr><td>Tiket Panda Valley (7 hari awal, passport)</td><td class="status">Belum</td></tr>
+          <tr><td>Tiket Polar Ocean Park + Happy Valley (Trip.com)</td><td class="status">Belum</td></tr>
+          <tr><td>eSIM + Alipay untuk semua dewasa</td><td class="status">Belum</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <details>
+    <summary>Sumber (semak semula dekat tarikh)</summary>
+    <ul>
+      <li><a href="https://www.chinahighlights.com/chengdu/attraction/xiling-ski-resort.htm">Gunung Salji Xiling (kereta kabel, taman budak, hotel)</a></li>
+      <li><a href="https://sc.sina.cn/news/m/2026-03-12/detail-inhqtkak4792236.d.html">Xiling musim 2026 tutup 17 Mac</a></li>
+      <li><a href="https://m.panda.org.cn/en/pandavalley/tickets/">Panda Valley tiket</a></li>
+      <li><a href="https://travelchinawith.me/attractions/sichuan/chengdu/dujiangyan-panda-valley/">Panda Valley panduan</a></li>
+      <li><a href="https://sichuan.scol.com.cn/ggxw/202507/83089751.html">Blue Tears Dujiangyan</a></li>
+      <li><a href="https://touch.piao.qunar.com/touch/detail.htm?id=32464">Polar Ocean Park tiket</a></li>
+      <li><a href="https://cd.happyvalley.cn/thematic.aspx?t=10">Happy Valley zon</a></li>
+      <li><a href="https://cd.happyvalley.cn/discount.aspx?t=4">Happy Valley tiket</a></li>
+      <li><a href="https://www.islamichinatravel.com/destination-guide/chengdu/chengdu-masjid/chengdu-huangcheng-mosque/">Masjid Huangcheng</a></li>
+      <li><a href="https://wildgreatwall.com/halal-restaurants-in-chengdu-china/">Restoran halal Chengdu</a></li>
+      <li><a href="https://www.aeroroutes.com/eng/250908-mh1q26tfu">Flight MH526 KL – Tianfu</a></li>
+      <li><a href="https://english.www.gov.cn/news/202507/17/content_WS6878b7c7c6d0868f4e8f43e0.html">Bebas visa Malaysia – China</a></li>
+      <li><a href="https://english.cq.gov.cn/services/entryandexit/EntryRequirements/202606/t20260629_15782278.html">Larangan bawa makanan ke China</a></li>
+      <li><a href="https://simology.io/blog/china-esim-travel-guide-great-firewall-vpn-connectivity-2026">eSIM + aplikasi disekat</a></li>
+    </ul>
+  </details>
+
+  <footer>Dikemas kini 9 Nov 2026. Waktu, harga dan musim perlu disemak semula dekat tarikh trip.</footer>
+</main>
+</body>
+</html>
